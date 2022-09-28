@@ -1,0 +1,165 @@
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0 50px 0;
+}
+
+.item {
+    position: relative;
+    background: white;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 50px;
+    width: 30%;
+    padding: 50px 45px;
+    height: 350px;
+}
+
+.title span {
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.examples div {
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.hint {
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+[datatooltip]::after {
+    content: attr(datatooltip);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #80a8bf;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+[datatooltip]:hover::after {
+    opacity: 1;
+    top: 2em;
+}
+
+.individual {
+    background-color: white;
+    border-radius: 80px;
+    display: flex;
+    box-shadow: rgb(34 60 80 / 20%) 0px 5px 10px 2px;
+    width: 100%;
+    justify-content: center;
+}
+
+.individualItem {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.individualItem .title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.individualSubtitle {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}
+
+@media (max-width: 1536px) {
+    .item {
+        padding: 40px 25px;
+    }
+
+    .title span {
+        font-size: 20px;
+    }
+
+    .examples div {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1230px) {
+    .inner {
+        justify-content: center;
+    }
+
+    .item {
+        width: 51%;
+        margin-bottom: 20px;
+    }
+
+    .item:last-child {
+        margin-bottom: 0;
+    }
+
+    .title span {
+        font-size: 30px;
+    }
+
+    .examples div {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 990px) {
+    .title span {
+        font-size: 20px;
+    }
+
+    .examples div {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 770px) {
+    .ul {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .item {
+        width: 65%;
+    }
+}
+
+@media (max-width: 575px) {
+    .inner {
+        margin: 20px 0;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    [datatooltip]::after {
+        content: attr(datatooltip);
+        left: -100px;
+    }
+
+    .individualSubtitle {
+        font-size: 14px;
+    }
+}

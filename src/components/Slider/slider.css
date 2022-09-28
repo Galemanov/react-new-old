@@ -1,0 +1,105 @@
+.slick-slide:focus {
+    overflow: auto;
+}
+
+.slick-slide .card {
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.slick-slide > div {
+    margin: 0 10px;
+}
+
+.slick-slide:active,
+.slick-slide:focus {
+    outline: none !important;
+}
+
+.slick-list {
+    margin: 20px -10px 60px;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.card {
+    border-radius: 5px;
+    height: 300px;
+    position: relative;
+    background: #f1f1f1;
+}
+
+.circle {
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background: #cf7500;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-top {
+    margin: 25px 30px 25px 30px;
+    color: gray;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.card-bottom {
+    display: flex;
+    align-items: center;
+    margin: 10px 30px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
+.card-bottom > span {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(219, 136, 120);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-bottom h3 {
+    font-size: 20px;
+    color: #cf7500;
+    margin-left: 10px;
+}
+
+.card-bottom h4 {
+    font-size: 16px;
+    color: gray;
+    margin: 1px 0 0 10px;
+}
+
+@media (max-width: 768px) {
+    .card-top {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-top {
+        font-size: 16px;
+    }
+
+    .card-bottom h3 {
+        font-size: 16px;
+    }
+
+    .card-bottom h4 {
+        font-size: 14px;
+    }
+}

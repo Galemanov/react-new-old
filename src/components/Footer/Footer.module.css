@@ -1,0 +1,114 @@
+.footer {
+    background: #282828;
+    padding: 35px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footerInner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phoneItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.phoneItem span {
+    font-size: 12px;
+    line-height: 32px;
+    color: white;
+}
+
+.phoneItem a {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 39px;
+}
+
+.phoneItem a:hover {
+    text-decoration: none;
+}
+
+.workTime {
+    font-size: 15px;
+    line-height: 32px;
+    margin: 10px 0;
+    color: white;
+}
+
+.workEmail a {
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.workEmail a:hover {
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.social a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
+.footerBottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+    font-size: 12px;
+    line-height: 32px;
+}
+
+.footerBottom {
+    font-size: 12px;
+    line-height: 32px;
+    color: white;
+}
+
+@media (max-width: 770px) {
+    .social {
+        margin-top: 20px;
+    }
+
+    .footerInner {
+        flex-direction: column;
+    }
+
+    .social a {
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .phoneItem a {
+        font-size: 14px;
+    }
+
+    .workEmail a {
+        font-size: 14px;
+    }
+
+    .social a {
+        font-size: 14px;
+    }
+}

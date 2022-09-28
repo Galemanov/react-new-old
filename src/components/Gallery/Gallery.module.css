@@ -1,0 +1,34 @@
+.grid {
+    padding: 16px;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 16px;
+}
+
+.grid > img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+}
+
+.grid img:hover {
+    filter: brightness(65%);
+}
+
+.gridBig {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+    }
+}
